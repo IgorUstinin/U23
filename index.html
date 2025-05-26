@@ -1,70 +1,41 @@
-<form action="#" method="post" target="_blank">
-  <h2>Генератор отчета о матче</h2>
-  <fieldset>
-    <legend>Команды</legend>
-    <ul>
-      <li>
-        <label for="name">Имя:*</label>
-        <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
-      </li>
-      <li>
-        <label for="age">Возраст:</label>
-        <input type="number" name="age" placeholder="27" id="age" min="0" max="125">
-      </li>
-    </ul>
-  </fieldset>
-  <fieldset>
-    <legend>Контакты</legend>
-    <ul>
-      <li>
-        <label for="email">E-mail:*</label>
-        <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
-      </li>
-      <li>
-        <label for="number">Телефон:*</label>
-        <input type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
-      </li>
-    </ul>
-  </fieldset>
-  <div>
-    <label for="message">Увлечения</label>
-    <textarea name="comment" placeholder="Расскажите обо всём, что для вас важно" id="message"></textarea>
-  </div>
-  <fieldset>
-    <legend>Учёба</legend>
-    <ul>
-      <li>
-        <input type="checkbox" name="intensive-courses" id="courses" checked>
-        <label for="courses">Прохожу курсы</label>
-      </li>
-      <li>
-        <input type="checkbox" name="books" id="books">
-        <label for="books">Читаю книги</label>
-      </li>
-      <li>
-        <input type="checkbox" name="video" id="video">
-        <label for="video">Смотрю видео</label>
-      </li>
-    </ul>
-  </fieldset>
-  <fieldset>
-    <legend>Предпочтения</legend>
-    <ul>
-      <li>
-        <input type="radio" name="preference" id="front" value="frontend" checked>
-        <label for="front">Фронтенд-разработка</label>
-      </li>
-      <li>
-        <input type="radio" name="preference" id="back" value="backend">
-        <label for="back">Бэкенд-разработка</label>
-      </li>
-    </ul>
-  </fieldset>
-  <div>
-    <button type="submit">Отправить</button>
-    <p>* — Обязательные поля</p>
-  </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItGid.info - простой слайдер</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ItGid.info - простой слайдер</h1>
+
+        <div class="slider">
+            <div class="slider-line">
+                <img src="./images/elephant.png" alt="">
+                <img src="./images/gorilla.png" alt="">
+                <img src="./images/home.png" alt="">
+                <img src="./images/ice_cream.png" alt="">
+            </div>
+        </div>
+        <button class="slider-prev">Prev</button>
+        <button class="slider-next">Next</button>
+
+        <div class="courses">
+            <ul>
+                <li><a href="https://itgid.info/course/javascript-2">JavaScript 2.0</a></li>
+                <li><a href="https://itgid.info/course/html">HTML для JS разработчиков</a></li>
+                <li><a href="https://itgid.info/course/object-js">Объектно Ориентированный JavaScript</a></li>
+                <li><a href="https://itgid.info/course/reactjs">ReactJS</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
 
 
 <input type="file"]{
